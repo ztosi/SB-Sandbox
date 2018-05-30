@@ -56,7 +56,6 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-            <!-- Todo: some of these plugins seem to do the same thing -->
             <plugin>
                 <!-- Build an executable JAR -->
                 <groupId>org.apache.maven.plugins</groupId>
@@ -99,6 +98,8 @@
                             <mainClass>org.zoe.nd4jtest4JeffY.TestMain</mainClass>
                         </manifest>
                     </archive>
+                    <finalName>TestND4J</finalName>
+                    <appendAssemblyId>false</appendAssemblyId>
                 </configuration>
             </plugin>
         </plugins>
